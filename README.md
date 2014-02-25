@@ -6,7 +6,7 @@ Server:
 
 2. Make sure the port matches the port you are going to use, it defaults to 8000. This can be found on line 9
 
-port = process.argv[2] || 8000;
+   port = process.argv[2] || 8000;
 
 Client:
 
@@ -15,16 +15,17 @@ Client:
 2. In your HTML include client objec,  <script src="RFSDK_client.js"></script>
 
 3. In another script tag initialize the RFSDK object. The RFSDK object expects a user_id object passed to it.
-<script type="text/javascript">
-         RFSDK.init({"user_id":1},function(msg)
-         { 
-         });
-</script>
-
+   <code>
+   <script type="text/javascript">
+	         RFSDK.init({"user_id":1},function(msg)
+	         { 
+	         });
+	</script>
+	</code>
 Talking:
 
 1. Simply call the RFSDK.talk method and pass a JSON string that contains at minimum a key value of to
 
-RFSDK.talk('{"to":"2","message":"hello user 2"}');
+<code>RFSDK.talk('{"to":"2","message":"hello user 2"}');</code>
 
 This will send a message via a websocket to the user registered with the ID of 2.
