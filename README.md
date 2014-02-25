@@ -16,11 +16,9 @@ Client:
 
 3. In another script tag initialize the RFSDK object. The RFSDK object expects a user_id object passed to it.
    <code>
-   <script type="text/javascript">
-	         RFSDK.init({"user_id":1},function(msg)
-	         { 
-	         });
-	</script>
+	RFSDK.init({"user_id":1},function(msg)
+	{ 
+	});
 	</code>
 Talking:
 
