@@ -6,7 +6,7 @@ Server:
 
 2. Make sure the port matches the port you are going to use, it defaults to 8000. This can be found on line 9
 
-   port = process.argv[2] || 8000;
+   port = process.argv[2] || 8000; <-- EDIT THIS VALUE
 
 Client:
 
