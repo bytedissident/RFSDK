@@ -2,7 +2,7 @@ A simple node.js Client & Server
 
 Server:
 
-1. Drop RFSDK_server.js on your serverm in the appropriate directory
+1. Drop RFSDK_server.js on your server in the appropriate directory
 
 2. Make sure the port matches the port you are going to use, it defaults to 8000. This can be found on line 9
 
